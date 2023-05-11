@@ -32,7 +32,7 @@ function Allbranches(){
                   className="col-6 p-3"
                   style={{ backgroundColor: "rgba(56, 55, 55, 0.253)" }}
                 >
-                  <a href="https://www.bestappsintamil.in/" target="_blank">
+                  <a href="https://www.bestappsintamil.in/" target="_blank" rel="noreferrer">
                     <h4 className="white poppins mb-2 h6">
                       Best apps in tamil
                     </h4>
@@ -50,6 +50,7 @@ function Allbranches(){
                   <a
                     href="https://techeyguys.agricreations.com/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <h4 className="white poppins mb-2 h6">Techey guys</h4>
                     <img
@@ -72,6 +73,7 @@ function Allbranches(){
                   <a
                     href="https://www.youtube.com/@bestappsintamil"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <h4 className="white poppins mb-2 h6">@bestappsintamil</h4>
                     <img
@@ -88,6 +90,7 @@ function Allbranches(){
                   <a
                     href="https://www.youtube.com/@HkragritechsYt"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <h4 className="white poppins mb-2 h6">@hkragritechsYt</h4>
                     <img
