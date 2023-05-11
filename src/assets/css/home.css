@@ -1,0 +1,22 @@
+
+@media only screen and (max-width: 768px) {
+    /* mobile */
+    .card-text1{
+      font-size: 3vh !important;
+    }
+    .card-text2{
+      font-size: 2vh !important;
+    }
+    .cards-01{
+      padding-bottom: 1px !important;
+    }
+  }
+  .hide{
+  display: none;
+  }
+  li{
+    list-style: none;
+  }
+  #main{
+    transition: opacity 1s ease-in-out;
+  }

@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+body{
+    background: #222222 !important;
+    min-height: 100vh;
+    transition: opacity 0.5s ease-in-out;
+}
+.fade-effect {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.poppins{
+    font-family: 'Poppins', sans-serif;
+}
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}
+.toastMessage {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 97, 97);
+  position: sticky;
+}
+.logo img{
+    max-width: 50px;
+    height: auto;
+}
+.logo img:hover{
+    max-width: 50px;
+    height: auto;
+}
+.nav-bg{
+    background-color: rgb(39, 39, 39);
+}
+.font-black{
+    color: rgb(0, 0, 0) !important;
+}
+.font-black:hover{
+    color: rgb(0, 17, 255) !important;
+    transition: 0.4s;
+
+}
+.btn-info{
+    background-color: rgb(0, 0, 0) !important;
+    color: aliceblue !important;
+    transition: 1s;
+    border: 2px solid #3246ff;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0px 10px 10px -8px rgba(8, 7, 7, 0.78);
+}
+.btn-info-logo{
+    background-color: rgb(0, 0, 0) !important;
+    color: aliceblue !important;
+    border: 2px solid #11b3ff;
+    border-radius: 50px;
+    padding: 1px;
+    box-shadow: 0px 10px 10px -8px rgba(8, 7, 7, 0.78);
+}
+.btn-info:hover{
+    background-color:#3246ff !important;
+    transition: 0.4s;
+    box-shadow: 0px 5px 25px rgba(0, 17, 255, 0.568);
+}
+.white{
+    color: white!important;
+}
+a{
+    text-decoration: none !important;
+}
+
+.social-logo img{
+    width:50px;
+    height: 50px;
+}
+.social-logo-about img{
+    width:30px;
+    height: 30px;
+}
+.social-logo-large img{
+    max-width:38px ;
+}
+.social-logo-1 img{
+    width:50px ;
+    height: 50px;
+}
+
+.border-top-footer{
+    border-top: 2px solid rgb(73, 73, 255);
+}
+.border-bottom{
+    border-bottom: 2px solid rgb(73, 73, 255);
+}
+.width-40{
+    width: 40%;
+}
+.width-50{
+    width: 50%;
+}
+.width-60{
+    width: 60%;
+}
+.width-70{
+    width: 70%;
+}
+.width-80{
+    width: 80%;
+}
+.youtube {
+    position: relative;
+    width: 50%;
+  overflow: hidden;
+    padding-top: 20%;
+    border: 2px solid blue;
+    margin: auto;
+  }
+  .yt-model{
+    border: 2px solid rgb(255, 255, 255) ;
+    border-radius: 5px;
+  }
+  .yt-bd{
+    border: 2px solid rgb(255, 255, 255) ;
+    border-radius: 5px;
+    box-shadow: 10px 12px 20px -5px rgba(7, 7, 8, 0.78);
+  }
+  .yt-about-bd{
+    border: 2px solid rgb(255, 255, 255) ;
+    border-radius: 5px;
+  }
+  .yt-bg{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .yt-subscribe{
+    background-color: rgba(250, 0, 0, 0.616);
+    padding:2px 5px !important;
+    font-size: 14px;
+    color: white;
+    border-radius: 5px;
+    margin-left: 10px !important;
+  }
+  .yt-subscribe:hover{
+    color: white;
+  }
+  .responsive-youtube {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  .loading_info{
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    transition: opacity 0.75s, visibility 0.75s;
+  }
+  .loading_info::after{
+    width: 75px;
+    height: 75px;
+    border: 10px solid rgb(255, 0, 0) !important;
+  }
+
+  .floating-whatsapp{
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    cursor: pointer;
+
+  }
+  .floating-whatsapp img{
+    width: 70px;
+    height:auto;
+    transition: 2s;
+  }
+  .floating-whatsapp img:hover{
+   transition: 1.5s;
+    width: 70px;
+    height:auto;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+  }
+  .drive{
+    position: relative;
+    padding-bottom: 50.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+  }
+  .drive iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.active{
+    color: #3246ff !important;
+}
+.border-bot-2{
+    border-bottom: 2px solid rgb(0, 60, 255);
+    margin-left: 200px !important;
+    margin-top: 30px !important;
+    margin-right: 200px !important;
+    /* border-left: 2px solid rgb(255, 255, 255);
+    border-top: 2px solid rgb(255, 255, 255);
+    border-right: 2px solid rgb(255, 255, 255); */
+}
+.about-us{
+  background-color: #0000007c;
+  border-left: 3px solid rgb(130, 246, 250);
+}
+.about-us-r{
+  background-color: #0000007c;
+  border-left: 0px solid rgb(130, 246, 250);
+  border-right: 3px solid rgb(130, 246, 250) !important;
+}
+
+.about-chirld{
+  text-align: center !important;
+  justify-content: center !important;
+  padding: 110px 10px;
+}
+.modal.fade.show {
+  backdrop-filter: blur(5px);
+}
+body.modal-open .supreme-container{
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur(1px);
+}
+.yt-logo-aboutus{
+  width: 20% !important; 
+  height: 20% !important;
+}
+.loading{
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  align-items: center;
+  opacity: 50%;
+}
+.allbranches a{
+border-radius: 50px !important;
+}.px-100{
+  padding-right: 100% !important;
+  padding-left: 100% !important;
+}
+  @media only screen and (max-width: 768px) {
+    /* mobile */
+    /* .card-text1{
+      font-size: 10vh !important;
+    } */
+    .card-text2{
+      font-size: 2.5vh !important;
+    }
+    .youtube {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        padding-top: 50%;
+        border: 2px solid blue;
+        margin: auto;
+      }
+      .font-responcive{
+        font-size: 25px !important;
+      }
+      .border-bot-2{
+        border-bottom: 2px solid rgb(0, 60, 255);
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+      }
+      .about-us{
+        height: 100% !important;
+      }
+      .yt-bg{
+        padding-left: 1px !important;
+        padding-right: 1px !important;
+      }     
+
+
+  }
+
+  @media only screen and (max-width: 992px) {
+    .border-bot-2{
+        border-bottom: 2px solid rgb(0, 60, 255);
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+      }
+      .about-chirld{
+        text-align: center !important;
+        justify-content: center !important;
+        padding: 10px 10px;
+      }
+      .about-us{
+        border-left: 0px solid rgb(130, 246, 250);
+        border-bottom: 3px solid rgb(130, 246, 250);
+      }
+      .about-us-r{
+        background-color: #0000007c;
+        border-left: 0px solid rgb(130, 246, 250);
+        border-right: 0px solid rgb(130, 246, 250) !important;
+      }
+      .about-us{
+        background-color: #000000;
+        height: 100% !important;
+      }
+
+    }
+
+    @media only screen and (max-width: 1200px) {
+      .about-us{
+        background-color: #000000;
+        height: 290px;
+      }
+    }
+
+

@@ -1,0 +1,97 @@
+#main{
+    transition: opacity 1s ease-in-out;
+  }
+      @media only screen and (max-width: 768px) {
+      /* mobile */
+      .card-text1{
+        font-size: 1.8vh !important;
+      }
+      .card-text2{
+        font-size: 1.3vh !important;
+      }
+      .cards-01{
+      padding-bottom: 1px !important;
+    }
+    }
+  .poppins-h{
+      font-family: poppins;
+      font-size:25px !important;
+  }
+  .poppins-p{
+      font-family: poppins;
+      font-size: 12px;
+      font-weight: 100;
+  }
+  .progress{
+    --bs-progress-height: 0.5rem !important;
+  }
+  .skill-content{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-family: poppins;
+    font-weight: 600 !important;
+  }
+  .skill-content-num{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-family: poppins;
+    font-weight: 100 !important;
+  }
+  .mb-10{margin-bottom: 10px !important;}
+  .progress{
+    border:2px solid rgb(51, 51, 51);
+    --bs-progress-bg:none !important;
+    margin-bottom: 13px;
+    /* padding: 0.5px !important; */
+  }
+  .progress-bar{
+    border-radius: 50px;
+  }
+  .skill-heading{
+    margin-top: 30px;
+  }
+  .border-bottom{
+    border-bottom: 3px solid rgb(95, 95, 95) !important;
+    padding-bottom: 5px;
+    width: 100%;
+    font-family: poppins;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .progressbar{
+      background-color: none !important;
+  }
+  .progressbar-web{
+      background-color: var(--bs-progress-bar-bg);
+  }
+  .progressbar-programming{
+      background-color: #6f0dfd !important;
+  }
+  .progress-database{
+      background-color: #00ccff !important;
+  }
+  .progress-uiux{
+      background-color: #ec56fa !important;
+  }
+  .what-i-do{
+      background-color: #0000003a;
+      transition: 1s;
+  border: 2px solid #3246ff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 10px 10px -8px rgba(8, 7, 7, 0.78);
+  }
+  /* .blur{
+      background-color: #0044ff1f;
+      filter: blur(8px);
+-webkit-filter: blur(8px);
+
+  } */
+.slugButton{
+  /* background-color: #2f00ff !important; */
+     color: white !important;
+  /* border: 2px solid rgba(26, 221, 0, 0.938) !important; */
+  cursor: pointer;
+}
