@@ -5,7 +5,8 @@ import "./assets/css/style.css";
 // import Aboutus from './pages/aboutus';
 // import Youtube from './pages/youtube';
 import Footer from './components/footer';
-import Blogs from './pages/blogs';
+import Gallery from './pages/gallery';
+// import Blogs from './pages/blogs';
 function App() {
   return (
     <div className="App">
@@ -14,7 +15,8 @@ function App() {
         {/* <Home /> */}
         {/* <Aboutus /> */}
         {/* <Youtube /> */}
-        <Blogs />
+        {/* <Blogs /> */}
+        <Gallery />
         <Footer />
       </header>
     </div>
