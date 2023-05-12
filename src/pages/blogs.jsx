@@ -1,11 +1,13 @@
 import React from "react";
 import "../assets/css/blog.css";
+import Allbranches from "../components/models/allbranches";
 function Blogs() {
     // const blogPost = [
     //     {imgSrc : "" , visitBlog:"", title:""}
     // ]
   return (
     <div className="container">
+      <Allbranches />
         <BlogContent />
     </div>
   );

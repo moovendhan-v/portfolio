@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer(){ 
     return(
-<div className="container">
+<div className="container-fluid">
   <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top-footer">
     <p className="col-md-4 mb-0 text-light">
       © 2023 Agricreations, All right recived
