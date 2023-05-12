@@ -3,8 +3,9 @@ import Nav from './components/nav';
 import "./assets/css/style.css";
 // import Home from './pages/home';
 // import Aboutus from './pages/aboutus';
-import Youtube from './pages/youtube';
+// import Youtube from './pages/youtube';
 import Footer from './components/footer';
+import Blogs from './pages/blogs';
 function App() {
   return (
     <div className="App">
@@ -12,7 +13,8 @@ function App() {
         <Nav />
         {/* <Home /> */}
         {/* <Aboutus /> */}
-        <Youtube />
+        {/* <Youtube /> */}
+        <Blogs />
         <Footer />
       </header>
     </div>
