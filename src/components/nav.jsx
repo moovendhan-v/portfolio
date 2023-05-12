@@ -13,7 +13,6 @@ function Navs() {
     {listClass: "nav-item", aClass: "nav-link font-black fs-5" , content:"Gallerys"},
     {listClass: "nav-item", aClass: "nav-link font-black fs-5" , content:"Social Media"},
     {listClass: "nav-item", aClass: "nav-link font-black fs-5" , content:"Resume"},
-    {listClass: "nav-item", aClass: "nav-link font-black fs-5" , content:"Resume"},
   ]
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
