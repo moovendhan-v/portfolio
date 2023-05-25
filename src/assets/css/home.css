@@ -1,3 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,700&family=Poppins&family=Raleway:wght@400;600&display=swap');
+
+*{
+    font-family: raleway, sans-serif;
+    color: white;
+}
+.white{
+    color: white;
+}
+body{
+    background-color: #1a1a1a;
+}
+a{
+    text-decoration: none;
+}
+.navbarItems a{
+    color: white !important;
+    font-weight: 600;
+}
+.navbarItems a:hover{
+    color: rgb(171, 88, 248) !important;
+    font-weight: 600;
+}
+.darkTheme{
+    background-color: #202020;
+    border:  1px solid #242424 ;
+}
+.trending{
+    color: white !important;
+    font-weight: 600;
+    font-size: 15px !important;
+}
+.trending-text{
+    color: rgb(44, 65, 255) !important;
+    font-weight: 600;
+    font-size: 15px !important;
+}
+.Hcenter{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px !important;
+}
 
 @media only screen and (max-width: 768px) {
     /* mobile */

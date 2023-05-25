@@ -1,151 +1,85 @@
 import logo from "../assets/images/logo.png";
 import { Link } from "react-router-dom";
 import "../assets/css/home.css";
+import React from "react";
 
-function Navs() {
-  // const style = {
-  //   color: "#00aa85",
-  // };
-  const list = [
+function Nav(props) {
+  const items = [
     {
-      listClass: "nav-item",
-      aClass: "nav-link font-black fs-5",
       content: "Moovendhan",
       path: "/home",
     },
     {
-      listClass: "nav-item",
-      aClass: "nav-link font-black fs-5",
       content: "About us",
       path: "/about",
     },
     {
-      listClass: "nav-item",
-      aClass: "nav-link font-black fs-5",
       content: "Youtube",
       path: "/youtube",
     },
     {
-      listClass: "nav-item",
-      aClass: "nav-link font-black fs-5",
       content: "Blogs",
       path: "/blog",
     },
     {
-      listClass: "nav-item",
-      aClass: "nav-link font-black fs-5",
-      content: "Gallerys",
+      content: "Gallery",
       path: "/gallery",
     },
   ];
-  const link = [
-    {
-      listClass: "nav-item",
-      aClass: "nav-link font-black fs-5",
-      content: "Social Media",
-      href: "https://links.agricreations.com",
-    },
-    {
-      listClass: "nav-item",
-      aClass: "nav-link font-black fs-5",
-      content: "Resume",
-      href: "https://link.agricreations.com/resume",
-    },
-  ];
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar darkTheme navbar-expand-lg">
       <div className="container-fluid">
-        <a className="navbar-brand logo" href="/">
-          <img src={logo} alt="Moovendhan" />
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul className="navbar-nav list-unstyled ">
-            {list.map((data) => (
-              <Navlink
-                listClass={data.listClass}
-                aClass={data.aClass}
-                name={data.content}
-                path={data.path}
-              />
-            ))}{" "}
-            {link.map((value) => (
-              <DirectLinks
-                listClass={value.listClass}
-                aClass={value.aClass}
-                name={value.content}
-                href={value.href}
-              />
+        <BranLink />
+        <Brand />
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            {items.map((data) => (
+              <Navli item={data.content} href={data.path} />
             ))}
-            <Mail />
-            <Allbranches />
           </ul>
         </div>
       </div>
+        {/* <Navright/> */}
     </nav>
   );
 }
 
-function Navlink(get) {
+function BranLink() {
   return (
-    <li className={get.listClass}>
-      <Link className={get.aClass} aria-current="page" to={get.path}>
-        {get.name}
-      </Link>
-    </li>
+    <a className="navbar-brand logo" href="/" rel="noreferrer">
+      <img src={logo} alt="" />
+    </a>
   );
 }
 
-function Mail() {
-  const style = {
-    color: "#00aa85",
-  };
+function Brand() {
   return (
-    <li className="nav-item px-2">
-      <a
-        target="_blank"
-        className=" nav-link font-black fs-5"
-        aria-current="page"
-        href="mailto:moovendhan@agricreations.com"
-        rel="noreferrer"
-      >
-        <i className="fa-solid fa-envelope fa-xl" style={style}></i>
+    <button
+      className="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span className="navbar-toggler-icon"></span>
+    </button>
+  );
+}
+
+function Navli(props) {
+  return (
+    <li className="nav-item navbarItems">
+      <a className="nav-link" href={props.href} rel="noreferrer">
+        {props.item}
       </a>
     </li>
   );
 }
-function Allbranches() {
-  return (
-    <li className="nav-item px-2">
-      <button
-        type="button"
-        className="btn nav-link fs-5 text-primary allbranches "
-        data-bs-toggle="modal"
-        data-bs-target="#all-branches"
-      >
-        <i className="fa-solid fa-globe"></i> All Branches
-      </button>
-    </li>
-  );
-}
 
-function DirectLinks(get) {
-  return (
-    <li className={get.listClass}>
-      <a className={get.aClass} aria-current="page" href={get.href} target="_blank" rel="noreferrer">
-        {get.name}
-      </a>
-    </li>
-  );
-}
-export default Navs;
+export default Nav;
+
+
+
+

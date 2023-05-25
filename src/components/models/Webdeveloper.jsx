@@ -101,6 +101,7 @@ function Webdeveloper(){
                 <button
                   type="button"
                   className="btn poppins white"
+                  rel="nofererrer"
                   style={{ backgroundColor: "rgba(190, 0, 0, 0.836)" }}
                 >
                   visit github

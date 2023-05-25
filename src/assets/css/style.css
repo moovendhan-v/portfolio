@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
 
 body{
-    background: #222222 !important;
+    background: #1a1a1a !important;
     min-height: 100vh;
     transition: opacity 0.5s ease-in-out;
 }
@@ -21,11 +21,11 @@ body{
   position: sticky;
 }
 .logo img{
-    max-width: 50px;
+    max-width: 35px;
     height: auto;
 }
 .logo img:hover{
-    max-width: 50px;
+    max-width: 35px;
     height: auto;
 }
 .nav-bg{

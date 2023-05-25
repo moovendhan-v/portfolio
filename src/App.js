@@ -8,6 +8,7 @@ import Youtube from "./pages/youtube";
 import Blogs from "./pages/blogs";
 import Footer from "./components/footer";
 import Gallery from "./pages/gallery";
+import Notfound from "./pages/notfound";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/youtube" component={Youtube} />
             <Route path="/blog" component={Blogs} />
             <Route path="/gallery" component={Gallery} />
+            <Route path="*" component={Notfound} />
           </Switch>
           <Footer />
         </header>
