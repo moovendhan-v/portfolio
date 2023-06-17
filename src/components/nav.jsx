@@ -1,7 +1,7 @@
 import logo from "../assets/images/logo.png";
 import { Link } from "react-router-dom";
 import "../assets/css/home.css";
-import React from "react";
+import React, { useState } from "react";
 
 function Nav(props) {
   const items = [
@@ -26,42 +26,47 @@ function Nav(props) {
       path: "/gallery",
     },
   ];
+
+  const [isNavCollapsed, setNavCollapsed] =  useState(true);
+  const handleNavCollapse = ()=>{
+    setNavCollapsed(!isNavCollapsed);
+  }
   return (
     <nav className="navbar darkTheme navbar-expand-lg">
       <div className="container-fluid">
         <BranLink />
-        <Brand />
-        <div className="collapse navbar-collapse" id="navbarNav">
+        <Brand onClick={handleNavCollapse} />
+        <div className={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`} id="navbarCollapse">
           <ul className="navbar-nav">
             {items.map((data) => (
-              <Navli item={data.content} href={data.path} />
+              <Navli item={data.content} path={data.path} key={data.path} click={handleNavCollapse} />
             ))}
           </ul>
         </div>
       </div>
-        {/* <Navright/> */}
     </nav>
   );
 }
 
 function BranLink() {
   return (
-    <a className="navbar-brand logo" href="/" rel="noreferrer">
+    <Link className="navbar-brand logo" to="/" rel="noreferrer">
       <img src={logo} alt="" />
-    </a>
+    </Link>
   );
 }
 
-function Brand() {
+function Brand(props) {
   return (
     <button
       className="navbar-toggler"
       type="button"
       data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
+      data-bs-target="#navbarCollapse"
+      aria-controls="navbarCollapse"
       aria-expanded="false"
       aria-label="Toggle navigation"
+      onClick={props.onClick}
     >
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -71,15 +76,11 @@ function Brand() {
 function Navli(props) {
   return (
     <li className="nav-item navbarItems">
-      <a className="nav-link" href={props.href} rel="noreferrer">
+      <Link onClick={props.click} className="nav-link" to={props.path} rel="noreferrer" data-bs-target="#navbarCollapse">
         {props.item}
-      </a>
+      </Link>
     </li>
   );
 }
 
 export default Nav;
-
-
-
-
